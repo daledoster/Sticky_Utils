@@ -6,21 +6,30 @@
     <link href="../css/main.css" rel="stylesheet" type="text/css">
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <title>Sticky Utility</title>
+    <!-- <title>Sticky Utility</title> -->
   </head>
   <body class="bg-dark">
-    <div id="noteHeader">
-      <div id="noteTitle">
-        <input id="noteTitleText" type="text">
-        <span class="inputExpand"></span>
-        <!-- </input> -->
-      </div>
-      <div>
-        <button id="newWindowInstance" type="button">
-          +
-        </button>
+    <div id="title-bar">
+      <div id="title">Sticky!</div>
+      <div id="title-bar-btns">
+        <button id="close-btn">x</button>
       </div>
     </div>
-    <hr>
+    <script src="../js/main.js"></script>
+
+    <div id="pseudo-body">
+
+      <div id="noteHeader">
+        <div id="noteTitle">
+          <input id="noteTitleText" type="text">
+          <span class="inputExpand"></span>
+        </div>
+        <div>
+          <button id="newWindow-btn" type="button">+</button>
+        </div>
+      </div>
+      <hr>
+
+    </div>
   </body>
 </html>

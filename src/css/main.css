@@ -1,5 +1,52 @@
 body {
+  padding: 0;
+  margin: 0;
   background-color: #1e1e1e;
+}
+
+div#pseudo-body {
+  margin: 8px;
+}
+
+#title-bar {
+  -webkit-app-region: drag;
+  height: 32px;
+  padding: 0px;
+  margin: 0px;
+  background-color: #4e4e4e;
+}
+
+#title {
+  position: fixed;
+  top: 0px;
+  left: 6px;
+  line-height: 32px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+#title-bar-btns {
+  -webkit-app-region: no-drag;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+#title-bar-btns button {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  color: #1e1e1e;
+  font-size: 24px;
+}
+
+#title-bar-btns button:hover {
+  background-color: #3e3e3e;
+}
+
+#title-bar-btns button:focus {
+  outline: 0;
 }
 
 div#noteHeader {
@@ -9,7 +56,7 @@ div#noteHeader {
 
 div#noteTitle {
   flex: 1;
-  padding-right: 5px;
+  padding-right: 16px;
 }
 
 input#noteTitleText {
@@ -43,15 +90,15 @@ input#noteTitleText:focus {
 }
 
 input#noteTitleText:focus ~ .inputExpand {
-  /* display: inline-block; */
   width: 100%;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
-button#newWindowInstance {
+button#newWindow-btn {
   min-width: 42px;
   min-height: 42px;
   background-color: #5db1d1;
+  color: #ffffff;
   border: none;
   text-align: center;
   display: inline-block;
@@ -59,21 +106,14 @@ button#newWindowInstance {
   border-radius: 6px;
 }
 
+button#newWindow-btn:hover {
+  background-color: #3892c2;
+}
+
+button#newWindow-btn:focus {
+  outline: 0;
+}
+
 hr {
   border: 0.5px solid #fec8d8;
 }
-
-/* input#noteTitle:focus {
-  height: 42px !important;
-  border-bottom: 1px solid !important;
-  border: 1 !important;
-  outline: 1 !important;
-}
-
-button#newWindowInstance {
-  display: inline-block;
-  right: 5px;
-  width: 42px;
-  height: 42px;
-  padding: 5px;
-} */
