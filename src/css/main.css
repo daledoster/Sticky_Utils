@@ -1,16 +1,40 @@
-input {
-  height: 42px !important;
-  border: 0 !important;
-  outline: 0 !important;
-  border-bottom: 1px solid #343a40 !important;
-  background: transparent !important;
-  /* width: 100% !important; */
+body {
+  background-color: #1e1e1e;
 }
 
-input:focus {
+#noteHeader {
+  position: relative;
+  width: 100%;
+}
+
+.textInputWrapper {
+  display: inline-block;
+  box-sizing: border-box;
+  left: 0;
+  right: 100px;
+}
+
+input#noteTitle {
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid #bfbfbf;
+  height: 42px;
+}
+
+input#noteTitle:focus {
+  /*color: #bfbfbf;*/
   height: 42px !important;
   border-bottom: 1px solid !important;
   border: 1 !important;
   outline: 1 !important;
   /* width: 100% !important; */
+}
+
+button#newWindowInstance {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  width: 42px;
+  height: 42px;
+  padding: 5px;
 }
