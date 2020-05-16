@@ -1,7 +1,13 @@
-body {
-  background-color: #1e1e1e;
+/* button:hover, button:focus {
+  background-color: #0275d8 !important;
 }
 
-h1 {
-  color: white;
+button:hover h1 {
+  color: #f7f7f7 !important;
 }
+
+button:focus {
+  background-color:	#343a40 !important;
+  outline: none !important;
+  box-shadow: none !important;
+} */
