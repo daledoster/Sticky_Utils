@@ -1,13 +1,14 @@
-/* button:hover, button:focus {
-  background-color: #0275d8 !important;
+input {
+  height: 41px !important;
+  border: 100px !important;
+  outline: 100px !important;
+  background: transparent !important;
+  width: 20px !important;
 }
 
-button:hover h1 {
-  color: #f7f7f7 !important;
+input:focus {
+  height: 42px !important;
+  border-bottom: 1px solid !important;
+  border: 1 !important;
+  outline: 1 !important;
 }
-
-button:focus {
-  background-color:	#343a40 !important;
-  outline: none !important;
-  box-shadow: none !important;
-} */
