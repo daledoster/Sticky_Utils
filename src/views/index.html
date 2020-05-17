@@ -5,17 +5,17 @@
     <!-- <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="../css/main.css" rel="stylesheet" type="text/css">
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- <title>Sticky Utility</title> -->
+    <!-- <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/renderer.js"></script>
   </head>
   <body class="bg-dark">
     <div id="title-bar">
-      <div id="title">Sticky!</div>
+      <div id="title">   </div>
       <div id="title-bar-btns">
         <button id="close-btn">x</button>
       </div>
     </div>
-    <script src="../js/main.js"></script>
 
     <div id="pseudo-body">
 
@@ -25,10 +25,11 @@
           <span class="inputExpand"></span>
         </div>
         <div>
-          <button id="newWindow-btn" type="button">+</button>
+          <button id="newWindow-btn" onClick="send2main()" type="button">+</button>
         </div>
       </div>
       <hr>
+      <textarea id="notesMain" placeholder="..." type="text"></textarea>
 
     </div>
   </body>
