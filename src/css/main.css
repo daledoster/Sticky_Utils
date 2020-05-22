@@ -60,21 +60,73 @@ div#pseudo-body {
   right: 0px;
 }
 
-#title-bar-btns button {
+#settings-btn {
+  -webkit-app-region: no-drag;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+button#gear-btn {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  border-radius: 2px;
+  background-color: #6393bf;
+}
+
+#settings-btn button:hover {
+  background-color: #85c4ff;
+}
+
+#settings-btn button:focus {
+  outline: none;
+  border: none;
+}
+
+button#close-btn, #newWindow-btn2 {
   width: 32px;
   height: 32px;
   background-color: transparent;
   border: none;
   color: #1e1e1e;
   font-size: 24px;
+  border-radius: 2px;
 }
 
 #title-bar-btns button:hover {
-  background-color: #3e3e3e;
+  background-color: #ce3e5e;
+}
+
+#close-btn:hover {
+  color: #fff;
 }
 
 #title-bar-btns button:focus {
   outline: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newWindow-btn2 {
+  background-image: linear-gradient(to right, #bf638a 0%, #bf638a 33%,
+                                    #bfb663 33.01%, #bfb663 66%,
+                                    #6393bf 66.01%, #6393bf 100%);
+}
+
+#newWindow-btn2:hover {
+  background-image: linear-gradient(to right, #ff85b8 0%, #ff85b8 33%,
+                                    #fff385 33.01%, #fff385 66%,
+                                    #85c4ff 66.01%, #85c4ff 100%);
+}
+
+svg#right-arrow {
+  transform: rotate(-90deg);
 }
 
 div#noteHeader {
@@ -84,7 +136,6 @@ div#noteHeader {
 
 div#noteTitle {
   flex: 1;
-  padding-right: 16px;
 }
 
 input#noteTitleText {
@@ -99,7 +150,10 @@ input#noteTitleText {
 
 span.inputExpand {
   margin-top: 6px;
-  border: 0.5px solid #fec8d8;
+  /* border: 0.5px solid #fec8d8; */
+  border: 1px solid;
+  border-image-source: linear-gradient(to right, #ff85b8 0%, #85c4ff 100%);
+  border-image-slice: 1;
   display: inline-block;
   float: left;
   transition: all 0.75s cubic-bezier(0.1, 0.1, 0.1, 1);

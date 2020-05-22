@@ -2,17 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="../css/main.css" rel="stylesheet" type="text/css">
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-    <!-- <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="../js/main.js"></script>
     <script type="text/javascript" src="../js/renderer.js"></script>
   </head>
   <body class="bg-dark">
     <div id="title-bar">
       <div id="title">   </div>
-      <div id="title-bar-btns">
+      <div id="settings-btn">
+        <button id="gear-btn">
+          <svg id="right-arrow" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+            <path d="M28 6 L4 6 M28 16 L4 16 M28 26 L4 26 M24 3 L24 9 M8 13 L8 19 M20 23 L20 29" />
+          </svg>
+        </button>
+      </div>
+      <div id="title-bar-btns" class="flex-container">
+        <button id="newWindow-btn2" onClick="send2main()">
+          <svg id="right-arrow" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+            <path d="M22 6 L30 16 22 26 M30 16 L2 16" />
+          </svg>
+        </button>
         <button id="close-btn">x</button>
       </div>
     </div>
@@ -23,9 +33,6 @@
         <div id="noteTitle">
           <input id="noteTitleText" type="text">
           <span class="inputExpand"></span>
-        </div>
-        <div>
-          <button id="newWindow-btn" onClick="send2main()" type="button">+</button>
         </div>
       </div>
       <hr>
