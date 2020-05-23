@@ -3,8 +3,8 @@ const {ipcMain} = require('electron');
 
 function createWindow() {
   let win = new BrowserWindow({
-    width: 400,
-    height: 550,
+    width: 800,
+    height: 1150,
     'minWidth': 400,
     'minHeight': 550,
     frame: false,
@@ -13,7 +13,7 @@ function createWindow() {
     }
   });
 
-  // win.webContents.openDevTools();
+  win.webContents.openDevTools();
   win.setMenu(null);
   win.loadFile('./src/views/index.html');
 }
