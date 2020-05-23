@@ -150,10 +150,10 @@ input#noteTitleText {
 
 span.inputExpand {
   margin-top: 6px;
-  /* border: 0.5px solid #fec8d8; */
-  border: 1px solid;
-  border-image-source: linear-gradient(to right, #ff85b8 0%, #85c4ff 100%);
-  border-image-slice: 1;
+  border: 0.5px solid #fec8d8;
+  /* border: 1px solid; */
+  /* border-image-source: linear-gradient(to right, #ff85b8 0%, #85c4ff 100%);
+  border-image-slice: 1; */
   display: inline-block;
   float: left;
   transition: all 0.75s cubic-bezier(0.1, 0.1, 0.1, 1);
